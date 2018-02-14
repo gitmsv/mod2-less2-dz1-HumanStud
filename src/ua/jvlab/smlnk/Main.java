@@ -5,9 +5,14 @@ import ua.jvlab.smlnk.objects.Human;
 import ua.jvlab.smlnk.objects.Student;
 import ua.jvlab.smlnk.objects.UserException;
 
+import java.text.ParseException;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
+
+    private int length;
 
     public static void main(String[] args) throws UserException {
         // Class Human;
@@ -58,8 +63,33 @@ public class Main {
         st.findFamlStud("Fam8");
         System.out.println();
 
+        // Output console;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Input Name");
+//        String nameSt = sc.nextLine();
+//        System.out.println("Input Surname");
+//        String lastNameSt = sc.nextLine();
+//        System.out.println("Input Group");
+//        String groupSt = sc.nextLine();
+//        String[] stdList = new String[]{nameSt, lastNameSt, groupSt};
+//
+//        for (int i = 0; i < stdList.length; i++) {
+//              if (nameSt.equals(temp) & lastNameSt.equals(temp)& groupSt.equals(temp)) {
+//                    System.out.println("You did not enter a name or surname or groups! Enter again!");
+//                } else {
+//                    System.out.println(Arrays.toString(stdList));
+//                }
+//                sc.close();
+//            }
+
         // Exceptions
-        // st.addStud(st11);
+        //st.addStud(st11);
 
     }
 }
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 package ua.jvlab.smlnk.objects;
 
-public class Group extends Student {
+public class Group {
 
     private Student[] grLst = new Student[10];
     private int n = 0;
@@ -26,14 +26,13 @@ public class Group extends Student {
         }
     }
 
-        public void showAll () {
-            for (int i = 0; i < grLst.length; i++) {
-                Student lst = grLst[i];
-                if (lst != null) {
-                    System.out.println(lst.getNameSt() + " " + lst.getLastNameSt() + " " + lst.getGroupNumbSt() + " " + lst.getBirthSt());
-                }
+    public void showAll () {
+        for (int i = 0; i < grLst.length; i++) {
+            Student lst = grLst[i];
+            if (lst != null) {
+                System.out.println(lst.getNameSt() + " " + lst.getLastNameSt() + " " + lst.getGroupNumbSt() + " " + lst.getBirthSt());
             }
         }
-
     }
 
+}
