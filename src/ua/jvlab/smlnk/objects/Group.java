@@ -5,7 +5,11 @@ public class Group {
     private Student[] grLst = new Student[10];
     private int n = 0;
 
-    public void addStud(Student std) {
+    public void addStud(Student std) throws UserException {
+
+        if (n == grLst.length) {
+            throw new UserException();
+        }
         grLst[n++] = std;
     }
 
@@ -26,7 +30,7 @@ public class Group {
         }
     }
 
-    public void showAll () {
+    public void showAll() {
         for (int i = 0; i < grLst.length; i++) {
             Student lst = grLst[i];
             if (lst != null) {

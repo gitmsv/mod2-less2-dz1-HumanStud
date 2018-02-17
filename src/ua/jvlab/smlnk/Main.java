@@ -5,14 +5,9 @@ import ua.jvlab.smlnk.objects.Human;
 import ua.jvlab.smlnk.objects.Student;
 import ua.jvlab.smlnk.objects.UserException;
 
-import java.text.ParseException;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.Scanner;
 
 public class Main {
-
-    private int length;
 
     public static void main(String[] args) throws UserException {
         // Class Human;
@@ -48,7 +43,7 @@ public class Main {
         st.addStud(st8);
         st.addStud(st9);
         st.addStud(st10);
-        //st.addStud(st11);
+        st.addStud(st11);
 
         st.showAll();
         System.out.println();
@@ -62,6 +57,14 @@ public class Main {
         // find "Fam8"
         st.findFamlStud("Fam8");
         System.out.println();
+
+        // Exceptions
+
+        try {
+            st.addStud(st11);
+        } catch (UserException e) {
+            System.out.println(e.toString());
+        }
 
         // Output console;
 //        Scanner sc = new Scanner(System.in);
@@ -82,8 +85,6 @@ public class Main {
 //                sc.close();
 //            }
 
-        // Exceptions
-        //st.addStud(st11);
 
     }
 }
